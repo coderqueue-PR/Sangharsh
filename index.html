@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- ------------Font Awesome--------------- -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <!-- ------------Google Fonts----------- -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Manrope&display=swap" rel="stylesheet">
+  <!-- ------My CSS-------- -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- -------favicon------ -->
+  <link href="./images/Coronavirus.jpg" rel="icon" type="image/x-icon" />
+  <title>Sangharsh</title>
+</head>
+
+<body>
+
+  <ul id="animation-area" class="container-fluid">
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <li><i class="fas fa-virus"></i></li>
+    <!-- ------------------------------- -->
+    <li><i class="fas fa-virus small-virus"></i></li>
+    <li><i class="fas fa-virus small-virus"></i></li>
+    <li><i class="fas fa-virus small-virus"></i></li>
+    <li><i class="fas fa-virus small-virus"></i></li>
+    <li><i class="fas fa-virus small-virus"></i></li>
+    <li><i class="fas fa-virus small-virus"></i></li>
+    <li><i class="fas fa-virus small-virus"></i></li>
+
+  </ul>
+
+  <div id="chat-start-icon-div">
+    <i class="fas fa-stethoscope fa-2x"></i>
+  </div>
+  <div id="chatbot-hover-description">
+    Click here to take your Self Assesment
+  </div>
+
+  <div class="chat-display-div container">
+    <i class="fas fa-times closing-icon"></i>
+    <h2>Rapid Synmptom Checker</h2>
+    <p>Answer the question to the best of your knwledge</p>
+    <h2 class="chat-notification" style="z-index: 5">Your assesment will start soon....</h2>
+    <p class="red-alert-section">
+      <i class="fas fa-exclamation-circle fa-4x" style="color: #fff"></i>
+      <br><br>
+      You are advised for testing as your infection risk is high.Please call the toll-free help line <a
+        href="#">1075</a> to schedule your testing.
+      <br><br>
+      List of testing centers: <a href="https://icmr.nic.in/node/39071">https://icmr.nic.in/node/39071</a>
+      <br><br>
+      Visit <a href="https://www.mohfw.gov.in/">https://www.mohfw.gov.in/</a> for more informations on testing and
+      quarantine guidelines
+    </p>
+    <p class="unwell-alert-section">
+      <i class="fas fa-syringe fa-4x"></i>
+      <br><br>
+      While you are unwell,your infection risk is low.Do remember that currently it is safer to consult a doctor through
+      phone or video than to visit the hospital.
+      <br><br>
+      It is recommended that you stay at home to avoid any chance of exposure to the novel Coronavirus.
+      <br><br>
+      Visit <a href="https://www.mohfw.gov.in/">https://www.mohfw.gov.in/</a> for more informations.
+    </p>
+    <p class="good-alert-section">
+      <i class="fas fa-thumbs-up fa-4x"></i>
+      <br><br>
+      Your infection risk is low. We recommend that you stay at home to avoid any chance of exposure to the Novel
+      Coronavirus.
+      <br><br>
+      Retake the Self-Assesment Test if you develop symptoms or come in contact with a COVID-19 confirmed patient.
+      <br><br>
+      Visit <a href="https://www.mohfw.gov.in/">https://www.mohfw.gov.in/</a> for more informations.
+    </p>
+
+    <!-- --------------condition 1--------------- -->
+
+    <section class="condition-one">
+      <h3 class="chatquestion">Are you experiencing any of the following symptoms ?</h3>
+      <div class="row option-row">
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat1-opt1" type="button"
+                class="btn btn-outline-light option-btn option-btn1">Cough</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat1-opt2" type="button"
+                class="btn btn-outline-light option-btn option-btn2">Fever</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat1-opt3" type="button"
+                class="btn btn-outline-light option-btn option-btn3">Difficulty in Breathing</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat1-opt4" type="button" class="btn btn-outline-light option-btn option-btn4">None of
+                the Above</button></center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="condition-two">
+      <h3 class="chatquestion">Have you ever had any of the following ?</h3>
+      <h2 class="chat-notification"></h2>
+      <div class="row option-row">
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat2-opt1" type="button"
+                class="btn btn-outline-light option-btn option-btn1">Diabetes</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat2-opt2" type="button"
+                class="btn btn-outline-light option-btn option-btn2">Hypertension</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat2-opt3" type="button" class="btn btn-outline-light option-btn option-btn3">Heart
+                Disease</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat2-opt4" type="button" class="btn btn-outline-light option-btn option-btn4">None of
+                the Above</button></center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="condition-three">
+      <h3 class="chatquestion">Which one of the following apply to you ?</h3>
+      <h2 class="chat-notification"></h2>
+      <div class="row option-row">
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat3-opt1" type="button" class="btn btn-outline-light option-btn option-btn1">Traveled
+                internationally in the last 14 days</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat3-opt2" type="button" class="btn btn-outline-light option-btn option-btn2">Recently
+                came across someone who has tested positive for COVID-19</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat3-opt3" type="button" class="btn btn-outline-light option-btn option-btn3">I am a
+                healthcare worker</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button id="chat3-opt4" type="button" class="btn btn-outline-light option-btn option-btn4">None of
+                the Above</button></center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="condition-four">
+      <h3 class="chatquestion">What is your age?</h3>
+      <h2 class="chat-notification"></h2>
+      <div class="row option-row">
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button type="button" class="btn btn-outline-light option-btn option-btn1">Light</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button type="button" class="btn btn-outline-light option-btn option-btn2">Light</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button type="button" class="btn btn-outline-light option-btn option-btn3">Light</button></center>
+          </div>
+        </div>
+        <div class="col-12 option-col">
+          <div class="option-info">
+            <center><button type="button" class="btn btn-outline-light option-btn option-btn4">Light</button></center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <img src="images/doctor.png" id="doctor-img">
+  </div>
+
+
+  <!-- -----------------------Landing Page----------------- -->
+  <!-- -----nav-bar------ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent mt-5">
+    <a class="navbar-brand" href="#"><i class=""></i>Corona Tracker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link px-4" href="#"><b>HOME</b><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4" href="resources.html"><b> RESOURCES</b></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- -----------Intro--------- -->
+  <div class="container landing-container">
+    <p id="updation" class="btn btn-secondary"><i id="update-icon" class="fas fa-sync-alt"></i> Updated 2 hours ago</p>
+    <h1>Sangharsh</h1>
+    <p><b> The objective of this website is to offer an ongoing assessment of COVID-19 and help you to understand the
+      behaviors due to the crisis.</b></p>
+    <div class="scroll"><span id="scroll-icon"><i class="fas fa-arrow-alt-circle-down fa-3x"></i></span></div>
+  </div>
+
+  <div class="container second-container">
+    <h2>Important Informations</h2>
+
+    <div class="info-row row">
+      <h3 class="info-row-fh3"><strong>Worldwide Coronavirus Related Numbers</strong> </h3>
+      <p class="info-fp" id="twp">Tracking meaningful coronavirus-related keywords allows you to understand what the
+        public is currently focusing on and COVID-19 consumer behaviors.</p> 
+      <div class="info-col col-md-4">
+        <div class="info-div info-div-mob">
+          <h3>Total Cases</h3>
+          <p class="count" id="total-global-confirmed">2735598</p>
+        </div>
+      </div>
+      <div class="info-col col-md-4">
+        <div class="info-div info-div-mob">
+          <h3 id="death">Deaths</h3>
+          <p class="count" id="total-global-deaths">191378</p>
+        </div>
+      </div>
+      <div class="info-col col-md-4">
+        <div class="info-div info-div-mob">
+          <h3>Recovered</h3>
+          <p class="count" id="total-global-recovered">751730</p>
+        </div>
+      </div>
+
+      <h3 class="info-row-fh3 mt-5"><strong>COVID-19 in INDIA</strong></h3>
+      <p class="info-fp" id="twp">Tracking meaningful coronavirus-related keywords allows you to understand what the
+        public is currently focusing on and COVID-19 consumer behaviors.</p>
+      <div class="info-col col-md-4">
+        <div class="info-div info-div-mob">
+          <h3>Total Cases</h3>
+          <p class="count" id="total-india-confirmed">25890</p>
+        </div>
+      </div>
+      <div class="info-col col-md-4">
+        <div class="info-div info-div-mob">
+          <h3>Deaths</h3>
+          <p class="count" id="total-india-deaths">681</p>
+        </div>
+      </div>
+      <div class="info-col col-md-4">
+        <div class="info-div info-div-mob">
+          <h3>Recovered</h3>
+          <p class="count" id="total-india-recovered">4523</p>
+        </div>
+      </div>
+    </div>
+    <!-- world map -->
+
+    <h3 class="mt-5 wmh3">See afected areas by COVID-19</h3>
+    <div class="worldmap-div">
+      <center><a href="https://news.google.com/covid19/map?hl=en-IN&gl=IN&ceid=IN:en"><button type="button"
+            class="btn btn-outline-light world-map-btn">Explore Map</button></a><br>
+      </center>
+    </div>
+    <p class="text-center text-muted">Resource : <a href="https://news.google.com/covid19/map?hl=en-IN&gl=IN&ceid=IN:en"
+        class="text-muted">Google News</a></p>
+    <div class="info-row row" id="trustedsite-row">
+      <h3 class="info-row-fh3">Websites You Must Know For Trusted Information</h3>
+      <p class="info-fp">Tracking meaningful coronavirus-related keywords allows you to understand what the public is
+        currently focusing on and COVID-19 consumer behaviors.</p>
+      <div class="info-col col-md-4">
+        <div class="info-div trusted-info-div" id="who-div">
+          <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1"><button type="button"
+              class="btn btn-outline-light trusted-hover-btn">Visit Site</button></a>
+        </div>
+      </div>
+      <div class="info-col col-md-4">
+        <div class="info-div trusted-info-div" id="wom-div">
+          <a href="https://www.worldometers.info/coronavirus/"><button type="button"
+              class="btn btn-outline-light trusted-hover-btn">Visit Site</button></a>
+        </div>
+      </div>
+      <div class="info-col col-md-4">
+        <div class="info-div trusted-info-div" id="mgov-div">
+          <a href="https://www.mygov.in/covid-19"><button type="button"
+              class="btn btn-outline-light trusted-hover-btn">Visit Site</button></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- ------Symptoms and preventions--------- -->
+<div class="container allinfo-container">
+  <h2>Symptoms & Preventions</h2>
+  <div class="row allinfo-row">
+    <div class="col-md-6 col-12 allinfo-left">
+      <center><img id="fimg" src="images/symptoms.png"></center>
+    </div>
+    <div class="col-md-6 col-12 allinfo-right">
+      <h4 style="color:#F97C02">HOW IT SPREADS</h4>
+      <center><img id="simg" src="images/spread.png"></center>
+      <h4 style="color:#57A247">PREVENTION</h4>
+      <center><img id="timg" src="images/prevention.png"></center>
+    </div>
+  </div>
+  <!-- -------------stay home------------- -->
+  <div class="fiverules-div">
+    <center><img src="images/5rules.gif" class="fiverules"></center>
+    <h4 id="">5 Rules Of Life</h4>
+    <ul>
+      <li class="mr-auto">STAY home</li>
+      <li>KEEP a safe distance</li>
+      <li>WASH hands often</li>
+      <li>COVER your cough</li>
+      <li>SICK? Call the helpline</li>
+    </ul>
+  </div>
+
+  
+ 
+</div>
+
+
+  <!-- ----------------innovation--------------------------- -->
+  <div class="container innovation-container">
+    <h2>Innovations In Corona</h2>
+    <div class="row innovation-row">
+      <div class="col-md-4">
+        <div class="innovation-content">
+          <img src="images/innovation1.jpg">
+          <h4>Full-body disinfection chamber</h4>
+          <hr>
+          <p>Maintaining its record of innovative new technologies to combat coronavirus, the Defense Research and
+            Development Organisation (DRDO) unveiled a full-body disinfection chamber and a full face mask for medical
+            staff handling affected patients on Satur....</p>
+          <a
+            href="https://www.deccanherald.com/city/top-bengaluru-stories/drdo-maintains-anti-coronavirus-tech-innovations-with-two-inventions-821483.html"><button
+              type="button" class="btn btn-outline-light innovation-more-btn">Know More</button></a>
+        </div>
+      </div>
+      <div class="col-md-4 innovation-col" id="sic">
+        <div class="innovation-content">
+          <img src="images/innovation2.jpg">
+          <h4>Emergency Ventilator</h4>
+          <hr>
+          <p>Dr Rhys Thomas, from Glangwili Hospital in Carmarthen, was "desperately concerned" at the lack of intensive
+            care unit (ICU) ventilators to deal with the expected influx of patients.
+            Along with engineering company CR Clark & Co of Ammanford, he created a machine.... </p>
+          <a href="https://www.bbc.com/news/uk-wales-52008745"><button type="button"
+              class="btn btn-outline-light innovation-more-btn">Know More</button></a>
+        </div>
+      </div>
+      <div class="col-md-4 innovation-col">
+        <div class="innovation-content">
+          <img src="images/innovations3.webp">
+          <h4>Sanitising Drones</h4>
+          <hr>
+          <p>From low cost portable ventilators to drones for sanitising, robots for delivery of food and medicines to
+            special stethoscope for examining patients from a distance and a UV technology fitted trunk for sanitising
+            currency and grocery items....</p>
+          <a
+            href="https://economictimes.indiatimes.com/news/science/drones-for-sanitising-robots-in-isolation-wards-special-stethoscope-innovations-to-fight-corona/articleshow/75105576.cms?from=mdr"><button
+              type="button" class="btn btn-outline-light innovation-more-btn">Know More</button></a>
+        </div>
+      </div>
+      <div class="col-md-4 col-12 youtube-div">
+        <iframe class="innovation-iframe" src="https://www.youtube.com/embed/haoMEmKaiU8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-4 col-12 youtube-div mob-youtube-div">
+        <iframe class="innovation-iframe" src="https://www.youtube.com/embed/QyCVrmUfimc" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-4 col-12 youtube-div mob-youtube-div">
+        <iframe class="innovation-iframe" src="https://www.youtube.com/embed/oZNdTZ1kNX4" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  ---------------------trending videos----------------- -->
+
+  <div class="container productive-container">
+    <h2>Trending...</h2>
+    <div class="row productive-row">
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe  src="https://www.youtube.com/embed/CnbWdY8HLjM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+
+        </div>
+      </div>
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe src="https://www.youtube.com/embed/BAuNG26S_Ms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+        
+        </div>
+      </div>
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe  src="https://www.youtube.com/embed/Wjk5NHoElSw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+         
+        </div>
+      </div>
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe src="https://www.youtube.com/embed/zO565cqyJZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+         
+        </div>
+      </div>
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe  src="https://www.youtube.com/embed/UxMCFkPUe4s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+         
+        </div>
+      </div>
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><<iframe  src="https://www.youtube.com/embed/HYcncYjnbZQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------donation--------------- -->
+  <div class="container donation-container">
+    <h2>Make Your Contribution</h2>
+    <div class="donation-img-div">
+      <center><img src="images/pmcares.jpg"></center>
+      <center><a href="https://www.pmcares.gov.in/en/"><button type="button"
+            class="btn btn-outline-light donation-btn">Donate Now&nbsp&nbsp<i
+              class="fas fa-hand-holding-usd "></i></button></a></center>
+    </div>
+  </div>
+
+  <!-- ------------------------Productive---------------------- -->
+  <div class="container productive-container">
+    <h2>Increase Productiveness</h2>
+    <div class="row productive-row">
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe  src="https://www.youtube.com/embed/ex4evgW9k_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+          <h4>Attend live Sessions and Workshops</h4>
+          <p>Session on Emerging The Voice Technology|| HTM Qubits -Session 25|| Hack The Mountains</p>
+
+        </div>
+      </div>
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe src="https://www.youtube.com/embed/lDNQPPMzbZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+          <h4>Do Yoga Everyday with Baba Ramdev</h4>
+          <p>Lockdown में युवाओं की फिटनेस के लिए फायदेमंद हैं ये 5 योगासन || Swami Ramdev || Exercise || Yoga</p>
+        </div>
+      </div>
+      <div class="col-md-4 productive-col">
+        <div class="productive-info">
+          <center><iframe  src="https://www.youtube.com/embed/mll-akn8Gqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
+          <h4>HacktoberFest 2020</h4>
+          <p>Our favorite monthlong open source celebration is coming soon.Be sure to register if this will be your first time participating. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------faq------- -->
+  <div class="container allinfo-container">
+    <h2>Check the FAQ</h2>
+    <center><a href="faq.html" style="text-decoration: none">
+        <p class="btn btn-outline-light faq-page-btn">Click here ,Head over to the FAQ Section ➩</p>
+      </a></center>
+  </div>
+
+
+
+  <!-- --------------------------footer------------------ -->
+  <div class="container-fluid footer-container-fluid">
+    <div class="row footer-row">
+      <div class="col-md-6 footer-left">
+        <p class="mt-3">Designed and Developed By Team Binary!</p>
+      </div>
+      <div class="col-md-6 footer-right">
+        <ul class="mt-3">
+          <li>
+            <a href="https://www.facebook.com/manasranjan.satapathy.169" target="_blank">
+              <i class="fab fa-facebook fa-3x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/manas_ranjan_satapathy_raj/" target="_blank">
+              <i class="fab fa-instagram fa-3x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/rathpranaya_?s=09" target="_blank">
+              <i class="fab fa-twitter fa-3x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/pranaya-rath-87949b194/" target="_blank">
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- -------jQuery link------- -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- --------My JavaScript-------- -->
+  <script type="text/javascript" src="index.js"></script>
+
+</body>
+
+</html>
