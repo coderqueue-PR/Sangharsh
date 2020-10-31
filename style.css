@@ -389,7 +389,9 @@ button:focus{
                         {padding:10px 63px;margin-bottom:100px}
                         .more-faq{display:none}
                         .faq-page-btn
-                        {width:80%;height:150px;margin:100px 0;background-color:rgba(0,0,0,.1);display:flex;align-items:center;justify-content:space-around;font-size:1.5em}
+                        {width:80%;height:150px;margin:100px 0;background-color:rgba(0,0,0,.1);display:flex;align-items:center;justify-content:space-around;font-size:1.5em;
+                             box-shadow : inset 4px 5px 20px black;
+}
                         .faq-page-btn:hover{background-color:rgba(0,0,0,.4);color:white}
                         .faq-page-btn:focus{outline:none;box-shadow:none}
                         .faq{margin-top:20px;height:600px;width:1000px}
