@@ -491,3 +491,15 @@ button:focus{
                             .footer-right{text-align:center}
                             .footer-right ul{width:100%;margin:10px auto}
                             .footer-right ul li{font-size:8px}}
+                             .faq-page-btns{
+                                width: 80%;
+                                height: 150px;
+                                margin: 100px 0;
+                                background-color: rgba(0,0,0,.1);
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-around;
+                                font-size: 1.5em;
+                                box-shadow: inset -5px 4px 20px #000000;
+                                border-radius: 39px;
+                            }
